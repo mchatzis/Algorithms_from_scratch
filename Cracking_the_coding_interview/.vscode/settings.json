@@ -80,5 +80,8 @@
     "stdexcept": "cpp",
     "streambuf": "cpp",
     "typeinfo": "cpp"
-  }
+  },
+  "python.analysis.typeCheckingMode": "basic",
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true
 }

@@ -1,6 +1,6 @@
 import pytest
 
-from topic_1.ex1_is_unique import Solution
+from ex1_is_unique import Solution
 
 test_cases = [  
                 ([],False),
