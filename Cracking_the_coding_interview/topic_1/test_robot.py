@@ -1,6 +1,6 @@
 import pytest
 
-from robot import Solution
+from topic_1.robot import Solution
 
 input_cases = [
 # ([[0,0,0],
