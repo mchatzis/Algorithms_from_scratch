@@ -13,7 +13,6 @@ class TreeNode:
 class Solution:
     def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
         root = self.buildTree(nums)
-        # print(root)
         return root
     
     def buildTree(self, lst):
