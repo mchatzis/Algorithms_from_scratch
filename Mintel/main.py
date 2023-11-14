@@ -1,5 +1,6 @@
 import json
-import pprint
+from pprint import pprint
+from collections import Counter
 import random
 
 with open('test_data.json') as file:
@@ -42,15 +43,31 @@ with open('test_data.json') as file:
 
 
 # 3
-import time
+# import time
 # status = 8951
 # entries = [item for item in data if item['status'] == status]
 # now = int(time.time())
 # times = [(item['end_time'] if item['end_time'] is not None else now) - item['start_time'] for item in entries]
-# print(sum(times)/len(times)/3600)
+# print(sum(times)/len(times)/3600, "days")
 
-status = 8951
-entries = [item for item in data if item['status'] == status]
 
-print(sum(times)/len(times)/3600)
+# 4
+# pieces = [item['piece_id'] for item in data]
+# total_pieces = len(pieces)
 
+# error_freq = dict()
+# non_unique_pieces = list()
+# for item in data:
+#     if item['status'] % 10 == 3:
+#         id = item['piece_id']
+#         if id not in error_freq:
+#             error_freq[id] = 0
+#         error_freq[id] += 1
+#         if error_freq[id] > 1:
+#             non_unique_pieces.append(id)
+
+# print(len(non_unique_pieces) / total_pieces * 100)
+
+
+# 5
+# pending
